@@ -19,7 +19,6 @@ function inputDigit(digit) {
 function inputDecimal(dot) {
     if (calculator.waitingForSecondOperand === true) return;
 
-    // If the `displayValue` does not contain a decimal point
     if (!calculator.displayValue.includes(dot)) {
         calculator.displayValue += dot;
     }
